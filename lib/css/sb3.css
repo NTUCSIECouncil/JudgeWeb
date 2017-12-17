@@ -1,0 +1,323 @@
+
+body {
+	position: relative;
+	font: 80% "Lucida Grande", Arial, Verdana, Lucida, Helvetica, Arial, sans-serif;
+	color: #336699;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+
+/* -----style----- */
+
+hr {
+	border: 0px;
+	border-top: 1px solid #8cacbb;
+	text-align:center;
+	height: 0px;
+}
+
+input, select {
+	border: 1px solid #8cacbb;
+	color: darkblue;
+	background-color: white;
+	vertical-align: middle;
+	text-decoration:none;
+	font-size: 100%;
+	height: 22px !important;
+	max-height: 22px !important;
+	min-height: 22px !important;
+	margin: 1px;
+	display: inline;
+}
+
+a 
+{
+	color:#436976;
+	text-decoration:none;
+}
+
+a:hover {
+	color: darkblue;
+	text-decoration:underline;
+}
+
+/* general headline setup */
+
+h1, h2, h3, h4, h5 {
+	color: #006699;
+	background-color: transparent;
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	margin-left:    0;
+	margin-right:   0;
+	margin-top:     0;
+	margin-bottom:  1em;
+	padding-left:   0;
+	padding-right:  0;
+	padding-top:    0.5em;
+	padding-bottom: 0;
+	border-bottom: 1px solid #8cacbb;
+	clear: left;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+/* special headlines */
+h1 {font-size: 160%; margin-left: 0px; font-weight: bold;}
+h2 {font-size: 150%; margin-left: 20px;}
+h3 {font-size: 140%; margin-left: 40px; border-bottom: none; font-weight: bold;}
+h4 {font-size: 120%; margin-left: 60px; border-bottom: none; font-weight: bold;}
+h5 {font-size: 100%; margin-left: 80px; border-bottom: none; font-weight: bold;}
+
+/* indent different sections */
+div.level1 {margin-left: 3px;}
+div.level2 {margin-left: 23px;}
+div.level3 {margin-left: 43px;}
+div.level4 {margin-left: 63px;}
+div.level5 {margin-left: 83px;}
+
+.note {
+	font-size: 11px;
+	color: #336699;
+	font-family: Arial;
+}
+
+table.super {
+	border: 1px solid #DDDDDD;
+	padding: 0px;
+	margin: 0px;
+}
+
+td.super {
+	padding: 7px;
+	margin: 0px;
+
+	background-color: #336699;
+	color: white;
+}
+
+table.regform {
+	border: 1px solid #336699;
+	padding: 1px;
+}
+
+td.regform {
+	padding: 7px;
+	margin: 0px;
+
+	border: 1px solid #EEEEEE;
+	font-size: 12px;
+}
+
+td.volumes {
+	border: 1px solid #EEEEEE;
+	font-size: 12px;
+}
+div.volumes {
+	padding: 7px;
+	height: 12px;
+	font-size: 12px;
+}
+.sbHeader div {
+	display: inline-block;
+	padding: 5px 2px;
+	border: 1px solid #EEEEEE;
+	margin: 1px;
+	font-size: 14px;
+	color: white;
+	background-color: black;
+}
+.sbTeam div {
+	position: relative;
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 2px;
+	border: 1px solid #EEEEEE;
+	font-size: 14px;
+	margin: 1px;
+	white-space: nowrap;
+	/*font-weight: bold;*/
+}
+div.cellRank {
+	background-color: #EEE;
+	color: black;
+	font-weight: bold;
+}
+div.cellTeam {
+	background-color: #EEE;
+	font-weight: bold;
+	color: black;
+}
+div.cellSolved {
+	background-color: #EEE;
+	font-weight: bold;
+	color: black;
+}
+div.cellPenalty {
+	background-color: #EEE;
+	color: black;
+}
+div.cellAC {
+	background-color: green;
+	color: white;
+}
+div.cellWA {
+	background-color: red;
+	color: white;
+}
+div.cellNONE {
+	background-color: #CDE;
+}
+span.cellINPTY {
+	display: inline;
+}
+
+td.statusform {
+	padding: 2px;
+	margin: 0px;
+
+	border: 1px solid #EEEEEE;
+	font-size: 12px;
+}
+
+.statuswaiting td{
+	background-color: #CDF;
+}
+.statusRunning td{
+	background-color: #FFD;
+}
+
+td.header {
+    background-color: #003366;
+}
+
+@charset "utf-8";
+
+/************************************************
+                  RIGHT MENU
+************************************************/
+
+#rightPanel .function_list{
+	text-align: left;
+	float:left; display:inline;
+	margin:0px; padding:0px;
+	margin-bottom:4px;
+	width:128px;
+	border-left:1px solid #dbdce3;
+	border-right:1px solid #dbdce3;
+	border-bottom:1px solid #dbdce3;
+}
+#rightPanel .function_list li{
+	float:left; display:inline;
+	margin:0px; padding:0px;
+	width:128px;
+	height:30px;
+	border-top:1px solid #dbdce3;
+}
+#rightPanel .function_list li.tree_root{
+	float:left;
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:160px;
+	height:21px;
+	border-top:1px solid #dbdce3;
+	color:#666;
+	background:url(../../img/memberSet/icon_list_tree_root.gif) no-repeat left top #FFFFFF;
+	padding:9px 0 0 28px;
+	line-height:9pt;
+	cursor: pointer;
+}
+#rightPanel .function_list li.tree_root_open{
+	float:left;
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:160px;
+	height:21px;
+	border-top:1px solid #dbdce3;
+	color:#666;
+	background:url(../../img/memberSet/icon_list_tree_root.gif) no-repeat left bottom #FFFFFF;
+	padding:9px 0 0 28px;
+	line-height:9pt;
+	cursor: pointer;
+}
+#rightPanel .function_list li.tree_level1{
+	float:left; display:inline;
+	margin:0px; padding:0px;
+	width:188px;
+	height:26px;
+	border-top:1px solid #dbdce3;
+	background:#f5f5f5;
+}
+#rightPanel .function_list li a{
+	font-size: 12px;
+	color: #2593B7;
+	float:left; display:block;
+	margin:0px; padding:0px;
+	width:100px;
+	height:30px; line-height:30px;
+	background:url(http://acm.csie.org/ntujudge/images/icon_list1.gif) no-repeat left top #FFFFFF;
+	padding-left:28px;
+}
+#rightPanel .function_list li a:hover {
+	background-position:left bottom;
+	background-color:#2573B7;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#rightPanel .function_list li a.step {background-position:left bottom;}
+#rightPanel .function_list li a.highLight{
+	background:url(http://acm.csie.org/ntujudge/images/icon_list1_highLight.gif) no-repeat left top;
+}
+#rightPanel .function_list li a.highLight:hover {
+	background-position:left bottom;
+}
+
+#rightPanel .function_list li.tree_level1 a{
+	width:150px; height:26px; line-height:26px;
+	background:url(http://acm.csie.org/ntujudge/images/icon_list_tree_Level1.gif) no-repeat #F5F5F5 left top;
+	padding-left:38px;
+}
+
+body #container #mainPanel #rightPanel .function_list li.tree_level1 a:hover {
+	background-color:#35C3E7;
+	background-position:left bottom;
+}
+
+@media print {
+    #right_menu, #title, #footer {
+        display: none;
+    }
+    .regform, font {
+        color: black !important;
+    }
+    table {
+        width: 100%;
+    }
+    table.regform, td.regform {
+        border: 1px solid black;
+    }
+}
+
+/* Score board background images add by tmt514 2010/07/11 thank TimeString */
+.ScoreGold td{
+	background-image: url("../../images/gold.jpg");
+}
+.ScoreSilver td{
+	background-image: url("../../images/silver.jpg");
+}
+.ScoreBronze td{
+	background-image: url("../../images/bronze.jpg");
+}
+/* special judge notes add by tmt514 2010/08/26 */
+.SpecialJudge{
+	color: #22AA11;
+}
+.Interactive{
+	color: #BB2211;
+}

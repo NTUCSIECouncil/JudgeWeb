@@ -1,0 +1,6 @@
+testdata/*
+lib/php/dblink.php
+.htaccess
+judge.pl
+.vscode/*
+sqldata/facm.sql
